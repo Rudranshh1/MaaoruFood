@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: #333;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+
+}
+.shop-logo{
+    height: 55px;
+    width: 200px;
+    margin-top: 25px;
+}
+.nav-btn-group{
+   margin: 35px 10px;
+   margin-right: 50px;
+}
+
+.nav-btn{
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.05rem;
+    cursor: pointer;
+    margin-left: 40px;
+    
+}
+.nav-btn:hover{
+    color: rgba(213, 22, 22, 0.661);
+}
+
+.login-btn{
+    color: white;
+    margin-left:40px;
+    text-decoration: none;
+    background-color: #e63946;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .toggle-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px; /* Adjust width as needed */
+    padding: 10px 15px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid #ccc;
+  }
+  
+  .toggle-label input {
+    display: none; /* Hide the radio input */
+  }
+  
+  .toggle-label input:checked + span {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    padding: 10px 15px;
+    border-radius: 25px;
+  }
+  
+
+/* cover image */
+.cover-img{
+    width: 100vw;
+    height: 60vh;
+    background-color: grey;
+   
+}
+.quote{
+    margin: auto;
+    width: fit-content;
+    padding-top: 250px ;
+}
+
+/* food-items */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+    /* margin-top:50px ; */
+  }
+  
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    height: 200px;
+    /* width: 150; */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.form {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100px; /* Full height of viewport for demonstration */
+  }
+  
+.form-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background-color: #0056b3;
+}
+
+/* form page */
+
+.form-group {
+    max-width: 400px; /* Limits the width of the form */
+    margin: 20px auto; /* Centers the form on the page */
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  label {
+    display: block; /* Ensures labels are on separate lines */
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%; /* Makes input fields span the full width of the form */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    margin-bottom: 15px; /* Adds spacing between inputs */
+  }
+  
+  input:focus {
+    border-color: #007bff; /* Adds a blue border on focus */
+    outline: none; /* Removes the default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional focus shadow */
+  }
+  
+  .form-group input[type="number"] {
+    -moz-appearance: textfield; /* Hides increment buttons in Firefox */
+  }
+  
+  .form-group input[type="number"]::-webkit-outer-spin-button,
+  .form-group input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Hides increment buttons in WebKit browsers */
+    margin: 0;
+  }
+
+  
+  
+
+/* hamburger-btn */
+.hamburger {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-right: 25px;
+    display: none;
+  }
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  /* Optional: Styles for animation */
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+
+@media (max-width: 950px)
+{
+    .nav-btn-group{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+}

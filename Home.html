@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-div">
+            <a href="Home.html"><img src="https://placehold.co/200x80?text=ShopLogo" alt="shop-logo"  class="shop-logo"></a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-btn-group">
+            <a class="nav-btn" href="Home.html">Home</a>
+            <a class="nav-btn" href="menu.html">Our Menu</a>
+            <a class="nav-btn" href="#offers">Our Offers</a>
+            <a class="nav-btn" href="#about">Know Us More</a>
+            <a class="nav-btn" href="#orders">Your Orders</a>
+            <a class="nav-btn" href="#cart">Cart(0)</a>
+        </div>
+    </nav>
+    <content>
+        <div class="cover-img">
+            <h1 class="quote">Get Something Delicious Everytime</h1>
+            <div class="form">
+                <a class="form-btn" href="#form-page">Requirement</a>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+            <h3>Card 1</h3>
+            <p>Content for card 1.</p>
+            </div>
+            <div class="card">
+            <h3>Card 2</h3>
+            <p>Content for card 2.</p>
+            </div>
+            <div class="card">
+            <h3>Card 3</h3>
+            <p>Content for card 3.</p>
+            </div>
+            <div class="card">
+            <h3>Card 4</h3>
+            <p>Content for card 4.</p>
+            </div>
+            <div class="card">
+                <h3>Card 4</h3>
+                <p>Content for card 4.</p>
+            </div>
+            <div class="card">
+                <h3>Card 4</h3>
+                <p>Content for card 4.</p>
+            </div>
+        </div>
+        <form id="form-page"  class="form-group">
+            <label >Name</label>
+            <input type="text" name="name" placeholder="Enter your name">
+            <br>
+            <br>
+            <label >Contact</label>
+            <input type="number" name="number" placeholder="Enter your contact number">
+            <br>
+            <br>
+            <label >Email</label>
+            <input type="email" name="email" placeholder="Enter your email id">
+            <br>
+            <br>
+            <label >Address</label>
+            <input type="text" name="address" placeholder="Enter your address">
+            <br>
+            <br>
+            <label >Select any one</label>
+            <div class="toggle-container">
+                <label class="toggle-label">
+                <input type="radio" name="option" value="delivery" checked>
+                <span>Delivery</span>
+                </label>
+                <label class="toggle-label">
+                <input type="radio" name="option" value="takeaway">
+                <span>Takeaway</span>
+                </label>
+            </div>
+
+            <div class="form">
+                <button id="submit-btn" type="submit" class="form-btn">Submit</button>
+            </div>
+        
+        </form>
+    </content>
+    <script src="script.js"></script>
+</body>
+
+</html>
